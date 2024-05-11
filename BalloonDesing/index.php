@@ -20,10 +20,10 @@
             <label for="menu"><img src="Imagenes/menu.png" class="menu-icono" alt=""></label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#inicio">Inicio</a></li> 
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contactos</a></li>
                 </ul>
 
             </nav>
@@ -36,7 +36,8 @@
        <div class="contenido-header">
       <div class="contenedor-encabezado">
 
-      <div class="texto-encabezado">
+      <div id="inicio" class="texto-encabezado">
+         
          <h1 style="color: white;">Balloon Desingns</h1>
 
             <p style="color: white">
@@ -63,7 +64,7 @@
         <div class="conteiner">
 
 
-            <div class="product">
+            <div  id=productos class="product">
                 <h2 class="title"h2>Menu</h2>
                 
             </div>
@@ -640,11 +641,10 @@
     </main>
 
 
-    <section class="info">
 
         <div class="info-content container">
 
-            <div class="info-txt">
+            <div id=servicios class="info-txt" >
               
                 <h2>Eventos coporativos</h2>
 
@@ -654,27 +654,33 @@
             
                         <div class="info-2">
                             <h3>Viva aerobus</h3>
-                            <p>
-                                La exelencia está en la diversidad y el modo de progresar
-                    es conocer y comparar las diversidades de productos, culturas y
-                    técnicas
-                            </p>
+                            <p>La excelencia en los eventos corporativos reside en la diversidad. Entender y comparar las diversas culturas, técnicas y productos en el mundo de la decoración no solo enriquece la estética de cualquier evento, sino que también refleja un enfoque innovador y personalizado. Al explorar y valorar diferentes estilos y enfoques, ofrecemos a cada evento una atmósfera única que no solo captura la esencia de la marca, sino que también mejora la experiencia de cada participante. Esta diversidad en la decoración permite adaptar cada detalle al objetivo del evento, fomentando un entorno de inclusión, creatividad y colaboración que es crucial para el éxito corporativo. Optar por una decoración diversa y bien ejecutada en eventos corporativos no solo destaca su compromiso con la excelencia, sino que también establece un estándar de calidad y sofisticación que todos los asistentes recordarán </p>
+                
                         </div>
                     </div>
-                    
-
                 </div>
             </div>
 
             <div class="info-img">
-                <img src="Imagenes/corpo.png" alt="">
+                <img src="Imagenes/corpo.png" alt="corpo">
             </div>
 
         </div>
 
-    </section>
+        <style>
+               .info-2 p {
+                color: white;
+               font-size: 16px;
+               right: 10px;
+               position: sticky;
+            
+        }
 
-    <div class="formulario-contacto contenedor">
+        </style>
+
+    
+
+    <div id=contacto class="formulario-contacto contenedor">
 
     
         <div class="informacion-contacto">
@@ -709,12 +715,34 @@
                 <textarea type="text" id="mensaje" name="Mensaje" rows="4"></textarea>
             </div>
             <div>
-                <input type="submit" class= "btn enviar "value="Enviar">
+                <input type="submit" value="Enviar">
             </div>
         </form>
     </div>
 
+   <style> .input-formulario {
 
+           width: 400px;
+           height: 40px;
+           background: ;
+           border: 2px purple;
+         }
+
+         .btn-enviar {
+        width: 100%;
+        border: none;
+        background: var(#ea0787);
+        padding: 12px;
+        color: #e70b9a;
+        margin: 12px 0;
+        font-size: 16px;
+
+    }
+
+
+
+
+   </style>
    
     
 
@@ -753,6 +781,29 @@
         </div>
 
     </footer>
+
+    <style>
+        .info-img {
+            position: absolute;
+            right: -55px;
+            top: 100px;
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
 
     <script src="script.js"></script>
 </body>
